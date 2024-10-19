@@ -12,39 +12,42 @@
   <body>
     <header class="header">
       <nav class="header__menu">
-          <ul class="header__links-list">
-            <li class="header__links-list-item header__links-item_no-bullit">
-              <a class="header__link">главная</a>
-            </li>
-            <li class="header__links-list-item">
-              <a class="header__link header__link_active" href="#">посмотреть лоты</a>
-            </li>
-            <li class="header__links-list-item">
-              <a class="header__link header__link_active" href="#">об аукционе</a>
-            </li>
-          </ul>
-          <a class="header__logo">
-            <img class="header__logo-image" src="images/logo-black.svg" alt="логотип">
-          </a>
-          <address class="address">
-            <a class="header_address" href="tel:+99995555555">+9 999 555 5555</a><br> 
-            <a class="header_address" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
-            наб. Принсенграхт 263-<br>
-            265, Амстердам
-          </address>
+        <ul class="header__links-list">
+          <li class="header__links-list-item header__links-item_no-bullit">
+            <a class="header__link header__link_active" href="">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="">об аукционе</a>
+          </li>
+        </ul>
       </nav>
+      <a class="header__logo" href="">
+        <img class="header__logo-image" src="images/logo-black.svg" alt="Логотип">
+      </a>
+      <address class="header__address-position">
+        <a class="header__address-item" href="tel:+99995555555">+9 999 555 5555</a><br>
+        <a class="header__address-item" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+        <p>наб. Принсенграхт 263-<br>265, Амстердам</p>
+      </address>
     </header>
     <main>
       <section class="cover">
         <div class="overlay"></div>
         <h1 class="cover__title">
           <span class="aligned-text">
-            он
-            <span class="letter-spacing-extended">о</span>
+            о
+            <span class="letter-spacing-extended">
+              но
+            </span>
           </span>
           <span class="aligned-text aligned-text_center">
-            теб
-            <span class="letter-spacing-extended">е</span>
+            те
+            <span class="letter-spacing-extended">
+              бе
+            </span>
           </span>
           <span class="aligned-text aligned-text_right">
             <span class="letter-spacing-extended">н</span>
@@ -104,8 +107,69 @@
         </ul>
         <a class="lots__look-more-link" href="#">посмотреть больше</a>
       </section>
-      <section class="about"></section>
+      <section class="about">
+        <div class="about__column">
+          <div class="about__logo">
+            <img class="about__logo-image" src="images/logo-white.svg" alt="Логотип">
+          </div>
+        </div>
+        <div class="about__column">
+          <h2 class="about__title">об аукционе</h2>
+          <div class="about__text">
+            <p>
+              Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата.
+              Наши лоты вообще не должны были паопасть ни на один аукцион. Потому что кому нужен дневник
+              девочки-подростка или картина, которую может нарисовать даже ребенок?
+              Кому нужны все эти странные вещи, созданные любителями?
+            </p>
+            <p>
+              Слишком сложные или, наоборот, слишком простые. Опережающе свое время.
+              В пух и прах растерзанные критиками. Неприятные и непонятные. Когда-то они казались просто
+              неудачными. Но, несмотря на критику, кажущуюся простоту и сложность, сейчас без этих лотов
+              невозможно представить современную культуру. Когда в эти веши не верил никто,
+              продолжали верить их создатели. И сейчас эти лоты стали культовыми.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <address class="address">
+        <a class="footer__address" href="tel:+99995555555">+9 999 555 5555</a><br> 
+        <a class="footer_address" href="mailto:info@sobaka.ge">info@sobaka.ge</a><br>
+        наб. Принсенграхт 263-<br>
+        265, Амстердам
+      </address>
+      <nav class="footer__menu">
+        <ul class="footer__menu-list">
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link footer__menu-link-active" href="#">главная</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#">посмотреть лоты</a>
+          </li>
+          <li class="footer__menu-list-item">
+            <a class="footer__menu-link" href="#">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social-list">
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="">
+            <img class="footer__social-icon" src="images/yt.svg" alt="YouTube">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="">
+            <img class="footer__social-icon" src="images/vk.svg" alt="VK">
+          </a>
+        </li>
+        <li class="footer__social-list-item">
+          <a class="footer__social-link" href="">
+            <img class="footer__social-icon" src="images/pinterest.svg" alt="Pinetrest">
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
