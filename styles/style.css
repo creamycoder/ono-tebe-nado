@@ -180,7 +180,9 @@
 }
 
 .card {
-    background: cover no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
     display: flex;
     flex-direction: column;
