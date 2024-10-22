@@ -1,15 +1,10 @@
 /* место для вашего кода */
-body {
-    background-color: lightgray;
-}
-
 .header {
     margin: 92px 24px 96px 24px;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: repeat(1, 1fr);
     align-items: center;
-    font-size: 18px;
 }
 
 .header__menu {
@@ -32,7 +27,7 @@ body {
 }
 
 .header__link {
-    white-space: nowrap;
+    font-size: 18px;
 }
 
 .header__link_active {
@@ -42,43 +37,45 @@ body {
 
 .header__logo {
     height: 105px;
-
 }
 
 .header__logo-image {
     height: 105px;
 }
 
-.header__address {
-    padding-top: 5px;
-    padding-left: 155px;
+.address {
     font-style: normal;
+    font-size: 18px;
 }
 
-.header__address-a {
+.header__address {
+    justify-content: end;
+    padding-top: 5px;
+    padding-left: 156px;
+}
+
+.address-link {
     line-height: 1.35;
     text-underline-position: under;
 }
 
-.header__address-p {
+.address-text {
     line-height: 1.35;
 }
 
 /*---------------------------------------------------*/
 
 .cover {
-    background-image: url(../images/cover.jpg);
+    background: url(../images/cover.jpg) no-repeat center / cover;
     position: relative;
     margin-bottom: 179px;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .overlay {
     min-height: 100%;
     min-width: 100%;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 0;
     top: 0;
     left: 0;
@@ -141,12 +138,13 @@ body {
 .bet-button {
     text-transform: uppercase;
     color: white;
-    border: 1px white solid;
+    border: 1px currentColor solid;
     background-color: transparent;
     font-weight: normal;
     padding: 12px 0;
     font-size: 22px;
     margin-top: 117px;
+    font-family: Raleway, sans-serif;
 }
 
 /*--------------------------------------------------------------*/
@@ -166,7 +164,7 @@ body {
 .lots__card-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 25px;
+    gap: 25px;
     list-style: none;
 }
 
@@ -181,17 +179,13 @@ body {
 }
 
 .card {
+    background: cover no-repeat center;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     min-height: 100%;
     padding: 51px 40px 48px 40px;
-}
-
-.card_type_film, .card_type_book, .card_type_picture {
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .card_type_film {
@@ -286,7 +280,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(1, 1fr);
-    margin: 183px 50px 0 50px;
+    margin: 183px 50px 88px 50px;
     font-size: 18px;
 }
 
@@ -294,18 +288,6 @@ body {
     padding: 0;
     font-style: normal;
 }
-
-.footer__address-a {
-    line-height: 1.35;
-    text-underline-position: under;
-    text-decoration-line: underline;
-}
-
-.footer__address-p {
-    line-height: 1.35;
-}
-
-/*.footer__menu {}*/
 
 .footer__menu-list {
     display: flex;
@@ -337,8 +319,6 @@ body {
 .footer__social-list-item {
     list-style: none;
 }
-
-/*.footer__social-link {}*/
 
 .footer__social-icon {
     width: 48px;
