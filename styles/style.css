@@ -106,6 +106,7 @@
 }
 
 .aligned-text_right {
+    line-height: 1;
     text-align: right;
 }
 
@@ -125,7 +126,7 @@
     grid-template-rows: repeat(1, 1fr);
     align-items: center;
     word-spacing: 18px;
-    padding: 0 50px 51px 78px;
+    padding: 18px 50px 51px 78px;
 }
 
 .cover__description-text {
